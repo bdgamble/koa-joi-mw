@@ -91,7 +91,7 @@ describe('koa-joi-mw', () => {
   });
 
   it('should parse a valid request', function(done) {
-    app.use(function* () {
+    app.use(function* (next) {
       try {
         this.request.body.test.should.be.type('number');
         this.request.query.test2.should.be.type('number');
@@ -101,6 +101,7 @@ describe('koa-joi-mw', () => {
       } catch (e) {
         done(e);
       }
+      yield* next;
     });
 
     request(app.listen())
