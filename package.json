@@ -1,0 +1,39 @@
+{
+  "name": "koa-joi-mw",
+  "version": "0.0.1",
+  "description": "Joi validation middleware for Koa.",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npm prune",
+    "test": "istanbul cover --root . node_modules/mocha/bin/_mocha --",
+    "posttest": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdgamble/koa-joi-mw.git"
+  },
+  "keywords": [
+    "koa",
+    "joi"
+  ],
+  "author": "Bryan Gamble <bryan.d.gamble@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdgamble/koa-joi-mw/issues"
+  },
+  "homepage": "https://github.com/bdgamble/koa-joi-mw#readme",
+  "devDependencies": {
+    "eslint": "^3.13.1",
+    "istanbul": "^0.4.5",
+    "joi": "10.x",
+    "koa": "^1.2.4",
+    "koa-bodyparser": "^2.3.0",
+    "koa-router": "^5.4.0",
+    "mocha": "*",
+    "should": "*",
+    "supertest": "^2.0.1"
+  },
+  "peerDependencies": {
+    "joi": "10.x"
+  }
+}
