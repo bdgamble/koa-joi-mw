@@ -28,7 +28,7 @@
     "joi": "^13.x",
     "koa": "^1.2.4",
     "koa-bodyparser": "^2.3.0",
-    "koa-router": "^5.4.0",
+    "koa-router": "^7.1.0",
     "mocha": "*",
     "should": "*",
     "supertest": "^2.0.1"

@@ -1,4 +1,6 @@
 # koa-joi-mw
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/bdgamble/koa-joi-mw.svg)](https://greenkeeper.io/)
 Koa middleware to validate requests against joi schemas.
 
 ## API
